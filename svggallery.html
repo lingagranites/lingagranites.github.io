@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            max-width: 100%;
+            scroll-behavior: smooth;
+            -webkit-user-select: none;
+                -webkit-touch-callout: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+        }
+        .header_svg{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .header_svg h1{
+            color: black;
+            font-size: 4vw;
+            position: absolute;
+            top: 2vh;
+            left: 12.5vw;
+            /* top: 20px; */
+        }
+        .header_svg h1:hover{
+            color: grey;
+        }
+        .header_svg input{
+            font-size: 1em;
+            background-color: inherit;
+            color: black;
+            position: absolute;
+            top: 3vh;
+            right: 5vw;
+            float: right;
+            border: none;
+        }
+        .header_svg input:hover{
+            color: white;
+            border-radius: 6px;
+            cursor:pointer;
+            
+        }
+        .header_svg svg{
+           min-height: auto;
+        }
+        @media (orientation: portrait) {
+            .header_svg svg {
+                
+             }
+            }
+        /* gallery  */
+        
+        .image_container_overall_div{
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .image_container_subdiv{
+            display: grid;
+            justify-items: center;
+        }
+        /* Screen larger than 600px? 2 column */
+        @media (min-width: 600px) {
+            .image_container_subdiv { grid-template-columns: repeat(2, 1fr); }
+          }
+          
+          /* Screen larger than 900px? 3 columns */
+          @media (min-width: 900px) {
+            .image_container_subdiv { grid-template-columns: repeat(3, 1fr); }
+          }
+
+          /* Screen larger than 900px? 3 columns */
+          @media (min-width: 1200px) {
+            .image_container_subdiv { grid-template-columns: repeat(4, 1fr); }
+          }
+        .image_container_div{
+            display: grid;
+        }
+        .image_container_div img{
+            width: 300px;
+            height: 300px;
+            padding: 1em;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px #888888;
+            transition: transform .2s;
+        }
+        .image_container_div img:hover{
+            transform: scale(1.1);
+        }
+        /* .image_container_div Img:hover {
+            box-shadow: none;
+            position: fixed;
+            top:20vh;
+            left:20vw;
+            width:80vw;
+            height :60vh;
+        } */
+        .image_container_div text{
+            text-align: center;
+            margin: 1em;
+        }
+
+        .footer_svg{
+            z-index: 2;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="header_svg">
+        <h1>Gallery</h1>
+        <input type="button" value="Go back" onclick="history.back()">
+        <svg viewbox="0 0 1320 150">
+            <path fill="lightblue" d="M 0 50   
+            C110 80,220 120,330 120
+            C440 120,550 40,660 50
+            C770 70,880 100,990 70 
+            C1100 50,1210 10,1320 120   
+            L 1320 0 
+            L 0 0"></path>
+        </svg>
+    </div>    
+
+    <!-- text gallery -->
+    <div class="image_container_overall_div">
+        <div class="image_container_subdiv">
+            <div class="image_container_div">
+                <img src="./gphoto2/ABSOLUTE BLACK - MEDIUM.jpeg">
+                <text>ABSOLUTE BLACK</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/ADHONIK BROWN.jpeg">
+                <text>ADHONIK BROWN</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/ALASKA BLUE.png">
+                <text>ALASKA BLUE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/ALASKA WHITE.png">
+                <text>ALASKA WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/AURORA BLUE.jpeg">
+                <text>AURORA BLUE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/BASH PARADISO.jpeg">
+                <text>BASH PARADISO</text>
+            </div>            
+            <div class="image_container_div">
+                <img src="./gphoto2/BIANCO AZUL.png">
+                <text>BIANCO AZUL</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/BLACK FOREST EXOTIC - PSI.jpeg">
+                <text>BLACK FOREST</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/BLACK GALAXY.jpeg">
+                <text>BLACK GALAXY</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/CLASSIC WHITE.jpeg">
+                <text>CLASSIC WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/COLOMBO JUPRANA.jpeg">
+                <text>COLOMBO JUPRANA</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/COLONIAL CREAM.jpeg">
+                <text>COLONIAL CREAM</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/COLONIAL IVORY.jpeg">
+                <text>COLONIAL IVORY</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/COLONIAL WHITE MPG.jpeg">
+                <text>COLONIAL WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/COSMOS BLACK.png">
+                <text>COSMOS BLACK</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/GHIBLI.jpeg">
+                <text>GHIBLI</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/HIMALAYAN BLUE.jpeg">
+                <text>HIMALAYAN BLUE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/IMPERIAL GOLD.jpeg">
+                <text>IMPERIAL GOLD</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/IVORY BROWN.jpeg">
+                <text>IVORY BROWN</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/JET BLACK.jpeg">
+                <text>JET BLACK</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/KUPPAM GREEN.jpeg">
+                <text>KUPPAM GREEN</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/LAVENDER BLUE.jpeg">
+                <text>LAVENDER BLUE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/MADANAPALLI WHITE - SR.jpeg">
+                <text>MADANAPALLI WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/NEW MADURAI GOLD.jpeg">
+                <text>MADURAI GOLD</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/NEW VISCONT WHITE.jpeg">
+                <text>VISCONT WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/NOVA BLACK-STG.jpg">
+                <text>NOVA BLACK</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/PARODA GOLD.jpeg">
+                <text>PARODA GOLD</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/RED MULTI COLOUR DARK.jpeg">
+                <text>RED MULTI</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/REGAL BLACK .jpeg">
+                <text>REGAL BLACK</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/ROSE WOOD.jpeg">
+                <text>ROSE WOOD</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/SAHARA GOLD.jpeg">
+                <text>SAHARA GOLD</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/SILVER FOREST EXOTIC - RGI.jpeg">
+                <text>SILVER FOREST EXOTIC</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/SILVER FOREST MG.jpeg">
+                <text>SILVER FOREST</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/TAN BROWN.jpeg">
+                <text>TAN BROWN</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/THUNDER WHITE.jpeg">
+                <text>THUNDER WHITE</text>
+            </div>
+            <div class="image_container_div">
+                <img src="./gphoto2/VIZAG BLUE BAHAMA.jpeg">
+                <text>VIZAG BLUE</text>
+            </div>
+        </div>
+   </div>
+
+    <!-- <div class="footer_svg"> -->
+        <svg style="position:sticky;bottom:0" viewbox="0 0 1320 150">
+            <path fill="lightblue" d="M 0 50   
+            C110 80,220 120,330 120
+            C440 120,550 40,660 50
+            C770 70,880 100,990 70 
+            C1100 50,1210 10,1320 120   
+            L 1320 150 
+            L 0 150"></path>
+        </svg>
+    <!-- </div> -->
+</body>
+</html>
