@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta property="og:description" content="Linga Granites is committed to offering premium quality &amp; granite. We are the leading suppliers of granite in India.">
     <meta name="keywords" content="natural stones, granite stones , granite slabs , granite tiles , kitchen top , kitchen top slabs, granite table , granite steps ,granite riser , dining table , black granite , blue granite , green granite ,granite shelves , white granite , red granite , cutter size slab ,gangsaw slab , custom granite , top quality granites , granite custom thickness , 18mm thickness ,20mm thickness ,10mm thickess , 25mm thickess ,30mm thickness , 1 inch thickness , 1/2 inch thickness , top quality granites">
     <meta property="og:locale" content="en_US">
@@ -13,21 +12,21 @@
     <meta property="og:url" content="https://www.lingagranites.com/">
     <meta property="og:type" content= "website" />
     <meta property="og:site_name" content="Linga Granites" />
-
     <link rel="icon" type="image/x-icon" href="./linga-logo-black-background.png" sizes="16x16 32x32" type="image/x-icon">
     <link rel="shortcut icon" href="./favicon-32x32.png">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-    <link rel="image_src" href="./android-chrome-512x512.png">
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8PZTJTXZ5"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-M8PZTJTXZ5');
-        </script>
+    <link rel="image_src" href="./android-chrome-512x512.png"> 
     <title>Linga Granites</title>
+    <script>
+        let docTitle = document.title;
+        window.addEventListener("blur",()=> {
+            document.title = "Thank you :)";
+        });
+
+        window.addEventListener("focus", () => {
+            document.title = docTitle;
+        });
+    </script>
     <style>
         @keyframes scaleAnimation {
           0% {
@@ -60,10 +59,12 @@
           animation: scaleAnimation 2s ease-in-out infinite;
         }
        
-      </style>
+    </style>
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+
+
       <!-- SVG Preloader -->
   <div class="preloader-svg">
     <svg height="100" width="100" viewBox="0 20 70 75">
@@ -307,26 +308,29 @@
     <!-- contact  -->
     <div class="contact_main_div">
         <div class="contact_content_div">
-            <div><h1 class="head_text_contact">Contact</h1></div>
+            <div>
+                <h1 class="head_text_contact">Contact</h1>
+            </div>
             <form action="https://formsubmit.co/el/hodefe" method="POST">
                 <div class="form_input_div">
-                    <input type="text" placeholder="Name" name="Name" id="insideinput">
+                    <input type="text" placeholder="Name" name="Name" class="insideinput">
                 </div>
                 <div class="form_input_div">
-                    <input type="number" placeholder="Number" name="number" id="insideinput" required>
+                    <input type="number" placeholder="Number" name="number" class="insideinput" required>
                 </div>
                 <div class="form_input_div">
-                    <input type="email" placeholder="Email" name="email" id="insideinput" required>
+                    <input type="email" placeholder="Email" name="email" class="insideinput" required>
                 </div>
                 <div class="form_input_div">
-                    <input type="text" placeholder="Message" name="Message" id="insideinput">
+                    <input type="text" placeholder="Message" name="Message" class="insideinput">
                 </div>
                 <div class="form_input_div">
-                    <input type="submit" placeholder="Submit" id="insideinput">
+                    <input type="submit" placeholder="Submit" class="insideinput">
                 </div>
             </form>
         </div>
     </div>
+    
 
     <!-- Footer -->
         <div class="footer" id="contact">
