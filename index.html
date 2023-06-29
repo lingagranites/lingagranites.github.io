@@ -17,16 +17,15 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="image_src" href="./android-chrome-512x512.png"> 
     <title>Linga Granites</title>
-    <script>
-        let docTitle = document.title;
-        window.addEventListener("blur",()=> {
-            document.title = "Thank you :)";
-        });
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8PZTJTXZ5"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-        window.addEventListener("focus", () => {
-            document.title = docTitle;
-        });
-    </script>
+        gtag('config', 'G-M8PZTJTXZ5');
+        </script>
     <style>
         @keyframes scaleAnimation {
           0% {
